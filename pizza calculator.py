@@ -1,26 +1,16 @@
-# pizza cslculator van Mateo
-small = 1
-medium = 1
-large = 1
-smallprijs = 5.99
-mediumprijs = 8.99
-largeprijs = 13.99
+#de pizza calculator van Mateo Vukoje
+# de vraag naar hoeveel pizzas
+small = int(input(f'hoeveel small pizzas wil je? '))
+medium = int(input(f'hoeveel medium pizzas wil je? '))
+large = int(input(f'hoeveel large pizzas wil je? '))
 
-
-groottepizza = input("wat voor grootte wil je je pizza hebben? ")
-if groottepizza == "small" :
-    print('de small versie van de pizza. ')
-    hoeveelsmall = input("hoeveel smalle pizzas wil je? ")
-    print(f'je wil dus {hoeveelsmall} smalle pizzas. dat ')
-elif groottepizza == "meduim":
-    print('de meduim versie van de pizza. ')
-    hoeveelmeduim = input("hoeveel meduim pizzas wil je? ")
-    print(f'je wil dus {hoeveelmeduim} meduim pizzas. ')
-elif groottepizza == "large":
-    print('de large versie van de pizza. ')
-    hoeveellarge = input("hoeveel large pizzas wil je hebben? ")
-    print(f'je wil dus {hoeveellarge} large pizzas. ')
-
-print('-------------')
-print('bonnetje')
+# de berekening van de pizzas
+# het bonnetje 
+print('----------')
+print('bonnetje van uw bestelling')
 print('')
+print(f'small pizzas {small} de totaal prijs van de small pizzas' ,small * 5.99,)
+print(f'medium pizzas {medium} de totaal prijs van de medium pizzas' ,medium * 8.99,)
+print(f'large pizzas {large} de totall prijs van de large pizzas',large * 13.99,)
+print('----------')
+print('de prijs',small * 5.99 + medium * 8.99 + large * 13.99,)
