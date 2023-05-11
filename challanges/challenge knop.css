@@ -1,0 +1,16 @@
+button{
+    height: 100px;
+    width: 100px;
+    font-family: 'Top Secret StampS';
+}
+
+.start{
+    background-color: blue;
+    color: white;
+}
+
+.mouse_over{
+    background-color: red;
+    text-decoration: underline;
+    color: white;
+}
