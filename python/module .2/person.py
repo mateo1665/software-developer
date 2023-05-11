@@ -1,0 +1,11 @@
+naam = input("je naam")
+adres = input("wat is je adress")
+woonplaats = input("wat is je woonplaats")
+
+print('--------------')
+print('naam  :',naam)
+print('--------------')
+print('adres :', adres)
+print('--------------')
+print('woonplaats :',woonplaats)
+print('--------------')
