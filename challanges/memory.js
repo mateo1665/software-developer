@@ -1,14 +1,14 @@
 const fotos = [
-    "braziliaanse_ronaldo.png",
-    "messi.png",
-    "ronaldo.png",
-    "ibrahimovic.png",
-    "neymar.png",
-    "lewandowski.png",
-    "suker.png",
-    "zidane.png",
-    "modric.png",
-    "ronaldinho.png",
+    "braziliaanse_ronaldo.png.jpg",
+    "messi.png.jpg",
+    "ronaldo.png.jpg",
+    "ibrahimovic.png.jpg",
+    "neymar.png.jpg",
+    "lewandowski.png.jpg",
+    "suker.png.jpg",
+    "zidane.png.jpg",
+    "modric.png.jpg",
+    "ronaldinho.png.jpg",
 ];
 
 
@@ -27,9 +27,16 @@ function shuffle(fotos){
 }
 
 var spelerslijst = shuffle(fotos);
-div_fotos = document.getElementById("fotos");
-
+const div_fotos = document.getElementById("fotos");
 
 for(let i = 0; i < fotos.length; i++) {
-    div_fotos.appendChild(fotos);
+    let img = document.createElement("img");
+    img.src = fotos[i];
+    div_fotos.appendChild(img);
+}
+
+for(let i = 0; i < spelerslijst.length; i++) {
+    let img = document.createElement("img");
+    img.src = spelerslijst[i];
+    div_fotos.appendChild(img);
 }
