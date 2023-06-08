@@ -1,16 +1,35 @@
-spelerslijst = ['Modric','zidane','ronaldo b','ronaldo','suker','ibrahimovic','ronaldinho','messi','neymar','lewandowski']
-spelerslijst = shuffle(spelerslijst);
-function shuffle(array) {
-    let currentindex = array.length, randomindex;
-    
+const fotos = [
+    "braziliaanse_ronaldo.png",
+    "messi.png",
+    "ronaldo.png",
+    "ibrahimovic.png",
+    "neymar.png",
+    "lewandowski.png",
+    "suker.png",
+    "zidane.png",
+    "modric.png",
+    "ronaldinho.png",
+];
+
+
+function shuffle(fotos){
+    let currentindex = fotos.length, randomindex;
+
     while(currentindex != 0) {
 
-        randomindex = math.floor(math.random() * currentindex);
+        randomindex = Math.floor(Math.random() * currentindex);
         currentindex--;
 
-        [array[currentindex], array[randomindex]] = [array[randomindex], array[currentindex]];
+        [fotos[currentindex], fotos[randomindex]] = [fotos[randomindex], fotos[currentindex]];
     }
 
+    return fotos;
+}
 
-    return array;
+var spelerslijst = shuffle(fotos);
+div_fotos = document.getElementById("fotos");
+
+
+for(let i = 0; i < fotos.length; i++) {
+    div_fotos.appendChild(fotos);
 }
